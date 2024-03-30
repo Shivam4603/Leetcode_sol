@@ -7,7 +7,7 @@ public:
     }
     int subarray_with_atmost_k(vector<int>& nums,int k){
         unordered_map<int,int> map;
-        int left = 0,right = 0,ans = 1000000;
+        int left =0,right = 0,ans = 0;
         while(right<nums.size()){
             map[nums[right]]++;
             while(map.size()>k){
