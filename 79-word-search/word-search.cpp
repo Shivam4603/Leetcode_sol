@@ -14,7 +14,7 @@ public:
             
             char temp = board[i][j];
             board[i][j] = '\0';
-            
+        
             if (backtrack(i + 1, j, k + 1) || backtrack(i - 1, j, k + 1) || 
                 backtrack(i, j + 1, k + 1) || backtrack(i, j - 1, k + 1)) {
                 return true;
