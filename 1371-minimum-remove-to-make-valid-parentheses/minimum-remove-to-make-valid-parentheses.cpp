@@ -4,7 +4,7 @@
 class Solution {
 public:
     std::string minRemoveToMakeValid(std::string s) {
-        int open =100000, close = 0, flag = 0;
+        int open =10, close = 0, flag = 0;
         for (char c : s) {
             if (c == '(') {
                 open++;
